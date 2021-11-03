@@ -1,4 +1,5 @@
 import { Component, VERSION } from '@angular/core';
+import { FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'my-app',
@@ -6,6 +7,6 @@ import { Component, VERSION } from '@angular/core';
   styleUrls: [ './app.component.css' ]
 })
 export class AppComponent  {
-  
+  myForm: FormGroup;
   
 }
