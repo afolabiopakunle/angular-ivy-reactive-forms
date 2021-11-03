@@ -52,7 +52,8 @@
         </div>
       </div>
       <div class="col-sm-6">
-        <select formControlName="level"
+        <select
+          formControlName="level"
           class="form-select form-select mb-3"
           aria-label=".form-select-lg example"
         >
@@ -63,6 +64,8 @@
         </select>
       </div>
     </div>
-    <button href="" class="btn btn-primary mt-3">Save</button>
+
+    <button href="" class="btn btn-primary mt-3 me-2" type="submit">Save</button>
+    <button href="" class="btn btn-primary mt-3" (click)="loadData()">Load Data</button>
   </form>
 </div>

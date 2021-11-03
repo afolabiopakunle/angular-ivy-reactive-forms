@@ -25,4 +25,16 @@ export class AppComponent implements OnInit {
     this.myForm.controls.fullName.removeValidators(Validators.required)
     console.log(this.myForm.controls);
   }
+
+  loadData() {
+    this.myForm.setValue({
+      fullName: 'Afolabi Opakunle',
+      email: 'opakunleafolabi@gmail.com',
+      skills: {
+        experienceInYears: 4,
+        level: 'intermediate',
+        skillTitle: 'Angular 2+'
+      }
+    })
+  }
 }
