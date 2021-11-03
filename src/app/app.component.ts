@@ -11,14 +11,18 @@ export class AppComponent implements OnInit {
   
   ngOnInit() {
     this.myForm = new FormGroup({
-      firstName: new FormControl('', Validators.required),
-      lastName: new FormControl()
+      fullName: new FormControl('', Validators.required),
+      email: new FormControl(),
+      skills: new FormGroup({
+        experienceInYears: new FormControl(),
+        level: new FormControl(),
+        skillTitle: new FormControl(),
+      })
     })
   }
 
   save() {
-    this.myForm.controls.firstName.removeValidators(Validators.required)
+    this.myForm.controls.fullName.removeValidators(Validators.required)
     console.log(this.myForm.controls);
-    console.log(this.myForm.get('lastName'))
   }
 }
