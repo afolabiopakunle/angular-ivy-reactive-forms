@@ -27,7 +27,7 @@ export class AppComponent implements OnInit {
   }
 
   loadData() {
-    this.myForm.setValue({
+    this.myForm.patchValue({
       fullName: 'Afolabi Opakunle',
       email: 'opakunleafolabi@gmail.com',
       skills: {
